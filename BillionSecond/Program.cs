@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BillionSecond
 {
@@ -31,8 +32,22 @@ namespace BillionSecond
             Console.WriteLine("Birthday:        " + bd);
             Console.WriteLine("Billion Seconds: " + billSec);
 
-            Console.WriteLine(billSec.Subtract(DateTime.Now).TotalDays);
-           
+            Console.WriteLine("Days left: " + billSec.Subtract(DateTime.Now).TotalDays);
+            Console.WriteLine("Hours left: " + billSec.Subtract(DateTime.Now).TotalHours);
+            Console.WriteLine("Minutes left: " + billSec.Subtract(DateTime.Now).TotalMinutes);
+
+
+
+            var temp = new List<string> { "Hi", "There" };
+
+            foreach(var word in temp)
+            {
+                Console.WriteLine(word);
+            }
+            
+
+
+
 
 
             Console.ReadLine();
